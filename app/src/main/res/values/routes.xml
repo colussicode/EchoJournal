@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="splash_screen_route_id" type="id"/>
+    <item name="entry_list_route_id" type="id"/>
+    <item name="new_entry_route_id" type="id"/>
+</resources>
