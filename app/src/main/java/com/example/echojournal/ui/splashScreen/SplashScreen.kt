@@ -32,12 +32,12 @@ fun SplashScreen(modifier: Modifier = Modifier, navController: NavController) {
             )
         )
         delay(3000L)
-        navController.navigate(R.id.splash_screen_route_id)
+        navController.navigate(R.id.entry_list_route_id.toString())
     }
 
     Box(modifier = modifier, contentAlignment = Alignment.Center) {
         Image(
-            painter = painterResource(id =-1),
+            painter = painterResource(id = R.drawable.ic_launcher_foreground),
             contentDescription = stringResource(id = R.string.splash_screen)
         )
     }

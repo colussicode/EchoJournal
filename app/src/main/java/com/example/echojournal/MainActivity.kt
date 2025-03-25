@@ -1,4 +1,4 @@
-package com.example.memegenerator
+package com.example.echojournal
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.echojournal.R
+import com.example.echojournal.ui.entryList.EntryListScreen
 import com.example.echojournal.ui.splashScreen.SplashScreen
 import com.example.echojournal.ui.theme.EchoJournalTheme
 
@@ -32,9 +32,13 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Navigation() {
     val navControllerHost = rememberNavController()
-    NavHost(navController = navControllerHost, startDestination = R.id.splash_screen_route_id) {
+    NavHost(navController = navControllerHost, startDestination = R.id.splash_screen_route_id.toString()) {
         composable(R.id.splash_screen_route_id.toString()) {
             SplashScreen(modifier = Modifier.fillMaxSize(), navControllerHost)
+        }
+
+        composable(R.id.entry_list_route_id.toString()) {
+            EntryListScreen()
         }
     }
 }
