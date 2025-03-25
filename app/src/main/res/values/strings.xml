@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">EchoJournal</string>
+    <string name="app_name" translatable="false">Echo Voice Journal</string>
+    <string name="splash_screen_route" translatable="false">splash_screen</string>
+    <string name="entry_list_route" translatable="false">entry_list</string>
+    <string name="new_entry_route" translatable="false">add_entry</string>
+    <string name="splash_screen"/>
+    <string name="mood_stressed" />
+    <string name="mood_sad" />
+    <string name="mood_neutral" />
+    <string name="mood_peaceful" />
+    <string name="mood_excited" />
+    <string name="button_confirm" />
+    <string name="button_save" />
+    <string name="button_cancel" />
+    <string name="mood_title_bts" />
+    <string name="new_entry_title" />
+    <string name="new_entry_add_title" />
+    <string name="topic" />
+    <string name="add_description" />
+    <string name="create_placeholder" />
+    <string name="recording_paused" />
+    <string name="recording_memories" />
+    <string name="no_entries" />
+    <string name="empty_state_entries" />
+    <string name="all_moods"/>
+    <string name="all_topics"/>
+    <string name="entry_list_title"/>
 </resources>
