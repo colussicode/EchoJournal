@@ -23,7 +23,7 @@ data class IconRoundedButton(
         pressedBrush = onPrimary,
         disabledColor = outline
     ),
-    override val titleText: String,
+    override val titleText: String? = null,
     override val textStyle: TextStyle = buttonStyle.labelLarge,
 ) : ButtonFormat {
     override fun getStateBrush(): ButtonDesignStates<Brush> = buttonBrushState

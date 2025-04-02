@@ -19,7 +19,7 @@ data class NoOutlineButton(
         onPrimaryVariant,
         primary
     ),
-    override val titleText: String,
+    override val titleText: String? = null,
     override val textStyle: TextStyle = buttonStyle.labelSmall,
     override val icon: Int? = R.drawable.icon_add,
 ) : ButtonFormat {

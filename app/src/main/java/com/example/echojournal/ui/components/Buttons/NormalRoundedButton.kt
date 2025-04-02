@@ -19,7 +19,7 @@ data class NormalRoundedButton(
         defaultBrush = primary,
         pressedBrush = onPrimaryVariant
     ),
-    override val titleText: String,
+    override val titleText: String? = null,
     override val textStyle: TextStyle = buttonStyle.labelMedium,
     override val icon: Int? = null,
 ) : ButtonFormat {

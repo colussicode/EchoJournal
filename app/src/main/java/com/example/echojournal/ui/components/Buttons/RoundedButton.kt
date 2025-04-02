@@ -25,6 +25,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.echojournal.R
 
 @Composable
 fun RoundedButton(
@@ -92,10 +93,12 @@ fun RoundedButton(
 
             Spacer(Modifier.width(6.dp))
         }
-        Text(
-            text = buttonState.titleText,
-            style = buttonState.textStyle.copy(tintColor)
-        )
+        buttonState.titleText?.let {
+            Text(
+                text = it,
+                style = buttonState.textStyle.copy(tintColor)
+            )
+        }
     }
 }
 
@@ -125,6 +128,13 @@ fun PreviewRoundedButton() {
             RoundedButton(
                 action = { Toast.makeText(context, "Pressed", Toast.LENGTH_LONG).show() },
                 buttonState = IconRoundedButton(titleText = "Cancel"),
+                enabled = true
+            )
+            Spacer(Modifier.height(50.dp))
+
+            RoundedButton(
+                action = { Toast.makeText(context, "Pressed", Toast.LENGTH_LONG).show() },
+                buttonState = IconRoundedButton(icon = R.drawable.icon_settings),
                 enabled = true
             )
             Spacer(Modifier.height(50.dp))

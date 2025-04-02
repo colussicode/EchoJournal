@@ -87,10 +87,12 @@ fun NoOutlineButton(
 
             Spacer(Modifier.width(6.dp))
         }
-        Text(
-            text = buttonState.titleText,
-            style = buttonState.textStyle.copy(tintColor)
-        )
+        buttonState.titleText?.let {
+            Text(
+                text = it,
+                style = buttonState.textStyle.copy(tintColor)
+            )
+        }
     }
 }
 
