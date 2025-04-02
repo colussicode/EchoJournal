@@ -3,8 +3,6 @@ package com.example.echojournal.ui.theme
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 
-const val longColor = 0xFF //for opacity purposes replace FF with number ex 0x80
-
 val Purple80 = Color(0xFFD0BCFF)
 val PurpleGrey80 = Color(0xFFCCC2DC)
 val Pink80 = Color(0xFFEFB8C8)
@@ -33,7 +31,7 @@ val background = Color(0xffFCFDFE)
 val onErrorContainer = Color(0xff680014)
 val errorContainer = Color(0xffFFEDEC)
 val onError = surface
-
+val onPrimaryVariant = Color(0xff002C6F)
 val primary10 = Color(0xff001945)
 val primary30 = Color(0xff00419C)
 val primary40 = Color(0XFF0057CC)
